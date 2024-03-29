@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Navigation */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    background-color: #242522;
+    z-index: -1;
+    width: 100%;
+    height: 60px;
+}
+
+#logo img {
+    width: 50px;
+    padding-left: 10px;
+    height: 40px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    padding: 25px 30px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: #ad6c73;
+    font-size: 16px;
+    font-family: 'Pixelify Sans', sans-serif;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#navbar ul li a:hover {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 19px;
+}
+
+#navbar #search {
+    display: flex;
+    margin-left: auto;
+    
+    /* box-shadow: 3px 3px 19px black, -3px -3px 19px black; */
+    
+}
+
+#navbar #search input{
+    border: 5px solid black;
+    text-align: center;
+    border-radius: 9px;
+}
+
+#navbar #search label{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#navbar #logo{
+    transition: all 2s ease-in-out 0.001s;
+}
+
+#navbar #logo:hover{
+    transform: rotate(360deg);
+}
+
+
+/* Section Home  */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 270px 41px;
+    padding: 17px 20px;
+    height: 180px;
+    color: #ea3963;
+
+    
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    opacity: 0.8;
+    width: 100%;
+    height: 700px;
+    top: 0px;
+    left: 0px;
+    background: url('bg.jpg') no-repeat center center/cover;
+}
+
+#home h1 {
+    padding-top: 0px;
+    text-shadow: 15px 10px 4px  #11bcd8;
+    -webkit-text-stroke: 2px black;
+    font-family: 'Lobster', sans-serif;
+    font-size: 200px;
+}
+
+
+#home p {
+    font-size: 18 px;
+    color: black;
+    text-align: center;
+    padding: 5px 130px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    -webkit-text-stroke: 0.5px white;
+}
+
+/* Section---our services */
+#events {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1px 0px;
+    padding: 20px 0px;
+    background: linear-gradient(to bottom, #ea3963, #e7a045);
+}
+
+#events h1 {
+    color: #0d9d51;
+    -webkit-text-stroke: 2px black;
+    font-size: 90px;
+}
+
+#allservices {
+    display: flex;
+    text-align: center;
+
+
+}
+
+#events .box {
+    padding: 5px 23px;
+    margin: 18px 47px;
+    border: 2px solid darkolivegreen;
+    border-radius: 20px;
+
+    box-shadow: 3px 3px 9px olive, -3px -3px 9px olive;
+}
+
+#events .box img {
+    width: 252px;
+    height: 234px;
+
+}
+
+#events #main_course {
+    transition: all 1s ease-in-out 0.001s;
+}
+
+#events #delivery {
+    transition: all 1s ease-in-out 0.001s;
+}
+
+#events #dessert {
+    transition: all 1s ease-in-out 0.001s;
+}
+
+#events #main_course:hover {
+    transform: scale(1.09);
+    background-color: rgb(242, 203, 131);
+}
+
+#events #delivery:hover {
+    transform: scale(1.09);
+    background-color: rgb(242, 203, 131);
+}
+
+#events #dessert:hover {
+    transform: scale(1.09);
+    background-color: rgb(242, 203, 131);
+}
+
+
+/* Section---our clients */
+#sponsor {
+
+    display: flex;
+    flex-direction: column;
+height: 100px;
+    /* /* margin: 65px 20px; */
+    margin-top: 120px;
+
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(to bottom, #ea3963, #e7a045); */
+}
+
+#ourclients {
+    
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+#sponsor h1 {
+    color: #0d9d51;
+    font-size: 50px;
+}
+
+#sponsor::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    opacity: 0.9;
+    width: 100%;
+    height: 40%;
+
+    left: 0px;
+    background: url('clients.png') no-repeat center center/cover;
+}
+
+#ourclients .logoclient {
+
+    margin: 35px 26px;
+}
+
+#ourclients .logoclient img {
+    width: 100px;
+    height: 80px;
+}
+
+
+/* Section --contact us */
+#contact::before {
+    content: "";
+    background: url('contact.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 75%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: linear-gradient(to bottom, #ea3963, #e7a045);
+}
+
+#contact {
+    padding-top: 75px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact h1 {
+    color: #0d9d51;
+    -webkit-text-stroke: 2px black;
+    font-size: 90px;
+}
+
+#contactus {
+    display: flex;
+    margin: 42px 3px;
+}
+
+#contactus .formcontact {
+    margin: 2px 2px;
+    padding: 11px 2px;
+}
+
+#contactus .formcontact label {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#contactus .formcontact input {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+
+    padding: 2px 24px;
+    margin: 2px 11px;
+}
+
+#contactus .formcontact input[type='submit'] {
+    padding: 2px 100px;
+    font-weight: bolder;
+    font-size: 16px;
+
+}
+
+#contactus .formcontact input[type='submit']:hover {
+    font-size: 18px;
+    background-color: black;
+    color: white;
+}
+
+
+/* Section --footer*/
+#end {
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* All Utilities */
+
+.primary-heading {
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+.btn {
+    border-radius: 5px;
+    background-color: #e7a045;
+    color: black;
+    margin: 28px;
+    padding: 8px 12px;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+    cursor: pointer;
+
+    box-shadow: 9px 9px 9px white;
+}
+
+.btn:hover {
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    box-shadow: 9px 9px 9px #e7a045, -9px -9px 9px #e7a045;
+}
+
+.sec-head {
+    font-family: 'Lobster', sans-serif;
+    font-size: 50px;
+    color: #11bcd8;
+    font-weight: bolder;
+}
